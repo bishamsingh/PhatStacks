@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PhatStacks</title>
+</head>
+<body>
+<div class="container">
+    <div class="page-header">
+        <h1>Welcome to the Users Page</h1>
+    </div>
+
+    <table class="table table-striped table-bordered">
+        <tr>
+            <td>First</td>
+            <td>Last</td>
+        </tr>
+        <tr th:each="user: ${users}">
+            <td th:text="${user.firstName}">First Name</td>
+            <td th:text="${user.lastName}">First Name</td>
+        </tr>
+
+    </table>
+</div>
+</body>
+</html>
